@@ -20,14 +20,16 @@ const Login: NextPage = () => {
         const data = await response.json();
         if (data.success) {
             console.log('Login successful', data);
+            alert(`login successful ${data}`);
             // Handle successful login
         } else {
             console.error('Login failed', data.message);
+            alert(`login failed ${data}`);
             // Handle login failure
         }
     } catch (error) {
         console.error('Error during login', error);
-        // Handle server errors
+        alert(`login error ${error}`);
     }
   };
 
