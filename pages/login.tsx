@@ -9,7 +9,7 @@ const Login: NextPage = () => {
   const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-        const response = await fetch('http://localhost:3001/login', {
+        const response = await fetch('http://blabla-env.eba-bhtqstum.eu-west-2.elasticbeanstalk.com/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
